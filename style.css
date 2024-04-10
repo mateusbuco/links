@@ -81,4 +81,7 @@ main a:hover{
     main a{
         padding: 10px 0;
     }
+    .footer {
+        font-size: .75rem;
+    }
 }
