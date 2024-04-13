@@ -46,6 +46,7 @@ main a{
     outline: none;
     border: solid 1px #ffffff;
     padding: 15px 0;
+    font-size: 1rem;
     text-decoration: none;
     color: #ffffff;
     border-radius: 28px;
