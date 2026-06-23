@@ -1,3 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #bdbebe 0%, #757677 35%, #454546 65%, #030303 100%);
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    padding: 40px 24px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+header img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    animation: fadeIn 0.8s ease;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 320px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease backwards;
+}
+
+.link-btn:nth-child(1) { animation-delay: 0.1s; }
+.link-btn:nth-child(2) { animation-delay: 0.2s; }
+.link-btn:nth-child(3) { animation-delay: 0.3s; }
+.link-btn:nth-child(4) { animation-delay: 0.4s; }
+
+.link-btn:hover {
+    background: #ffffff;
+    color: #030303;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.link-btn .icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.link-btn .icon svg,
+.link-btn .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    animation: fadeIn 0.8s ease 0.5s backwards;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.social a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    font-weight: 300;
+    animation: fadeIn 0.8s ease 0.6s backwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 520px) {
+    section {
+        padding: 32px 16px;
+        gap: 28px;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    header p {
+        font-size: 0.88rem;
+    }
+
+    .link-btn {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+        border-radius: 12px;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap')
 ; *{
     margin: 0;
